@@ -1,0 +1,221 @@
+header {
+    background-image: url(./../imgs/wraper.png);
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+}
+
+* {
+    font-family: "Nerko One", cursive;
+}
+
+body {
+    background-color: #272B30;
+}
+
+.navbar {
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    background-color: #3A497B;
+}
+
+.nav-container {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.active {
+    color: #0099CC !important;
+}
+
+.navbar-brand {
+    align-items: center;
+    color: white !important;
+}
+
+.navbar-brand img {
+    width: 18%;
+}
+
+h1 {
+    font-size: 21px;
+}
+
+header a {
+    color: white !important;
+}
+
+@media (min-width: 1400px) {
+    .games-list {
+        max-width: 1320px;
+    }
+
+    .game-details-cont {
+        max-width: 1320px;
+
+    }
+}
+
+.inner {
+    background-color: transparent;
+    border: 1px rgba(0, 0, 0, 0.175) solid;
+    filter: grayscale(0.7);
+    -webkit-filter: grayscale(0.7);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    cursor: pointer;
+}
+
+.inner:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.free {
+    color: white;
+    width: 25;
+    height: 24px;
+    padding: 4px;
+    font-size: 13px;
+    background-color: #0D6EFD;
+}
+
+.head-data-stuff {
+    background-color: #0DCAF0;
+
+    color: black;
+    padding: 3px 5px;
+    font-size: 12px;
+}
+
+.fa-xmark {
+    cursor: pointer;
+    font-size: 30px;
+    color: #C8C9CA;
+}
+
+.fa-xmark:hover {
+    font-size: 30px;
+    color: #ede8e8;
+}
+
+.game-img-info p {
+    color: #939598;
+}
+
+.gamename {
+    font-size: 15px;
+    color: white;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.game-details-cont {
+    padding-top: 20px;
+}
+
+.game-details-cont h2 {
+    color: white;
+}
+
+.game-data-footer h4 {
+    font-size: 11px;
+    font-weight: bolder;
+    color: white;
+    width: 25;
+    height: 22px;
+    padding: 4px;
+    background-color: #32383E;
+
+}
+
+.head-data h4 {
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+}
+
+.game-data-footer {
+    border-top: 1px rgba(0, 0, 0, 0.175) solid;
+    background-color: transparent;
+    padding: 10px 10px 5px;
+}
+
+.head-data p {
+    color: white;
+}
+
+.loaderdiv {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loader {
+    width: 100px;
+    height: 35px;
+    --g1: conic-gradient(from 90deg at 3px 3px, #0000 90deg, #fff 0);
+    --g2: conic-gradient(from -90deg at 22px 22px, #0000 90deg, #fff 0);
+    background: var(--g1), var(--g1), var(--g1), var(--g2), var(--g2), var(--g2);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    animation: l6 1s infinite alternate;
+}
+
+@keyframes l6 {
+    0% {
+        background-position: 0 50%, 50% 50%, 100% 50%
+    }
+
+    20% {
+        background-position: 0 0, 50% 50%, 100% 50%
+    }
+
+    40% {
+        background-position: 0 100%, 50% 0, 100% 50%
+    }
+
+    60% {
+        background-position: 0 50%, 50% 100%, 100% 0
+    }
+
+    80% {
+        background-position: 0 50%, 50% 50%, 100% 100%
+    }
+
+    100% {
+        background-position: 0 50%, 50% 50%, 100% 50%
+    }
+}
+.game-details{position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1223208;
+}
